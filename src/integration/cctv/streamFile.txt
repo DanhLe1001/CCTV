@@ -1,0 +1,4 @@
+ffmpeg -rtsp_transport tcp -i "RTSPCCTV" -c:v copy -codec:a aac -preset veryslow -loglevel error -segment_list_flags +live-cache -f flv "RTMPCCTV" 
+killall ffmpeg
+killall ffmpeg
+taskkill /IM "ffmpeg.exe" /F
